@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import { ResetedProvider }  from './context/ResetedContext';
+import { HeightsProvider } from './context/HeightsContext';
+import AlgorithmPicker from './components/AlgorithmPicker';
+import ResetButton  from './components/ResetButton';
+import VisualViewer from './components/VisualViewer';
+
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<>
+			<ResetedProvider>
+				<HeightsProvider>
+					<AlgorithmPicker />
+					<ResetButton />
+					<VisualViewer />
+				</HeightsProvider>
+			</ResetedProvider>
+			
+		</>
+	);
 }
 
 export default App;

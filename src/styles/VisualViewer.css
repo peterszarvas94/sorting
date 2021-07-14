@@ -1,0 +1,9 @@
+.visual_parent {
+    position: relative;
+    height: 21em;
+}
+
+.visual_child {
+    position: absolute;
+    bottom: 0;
+}

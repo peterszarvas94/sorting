@@ -1,0 +1,6 @@
+.stick {
+    background-color: red;
+    display: inline-block;
+    width: 1em;
+    margin: .5em 0 .5em .5em;
+}
