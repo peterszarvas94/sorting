@@ -1,15 +1,21 @@
 import React from 'react';
-import { useResetedUpdate } from '../context/ResetedContext';
+
+import { useHeightsUpdate } from '../context/HeightsContext';
+import RandomValues from './RandomValues';
 
 import '../styles/ResetButton.css';
 
 const ResetButton = () => {
     
-    const toggleReseted = useResetedUpdate();
+    const modifyHeights = useHeightsUpdate();
+
+    const toggleReseted = () => {
+        modifyHeights(RandomValues(40));
+    }
 
     return (
         <>
-            <button className='reset' onClick={toggleReseted}>reset</button>
+            <button onClick={toggleReseted} className='reset'>random values</button>
         </>
     );
 }

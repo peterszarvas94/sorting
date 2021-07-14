@@ -1,13 +1,6 @@
 import React from 'react';
 
-import '../styles/AlgorithmPicker.css';
-
 const AlgorithmPicker = () => {
-
-    const sort = () => {
-        
-    }
-
     return (
         <>
             <select>
@@ -17,7 +10,6 @@ const AlgorithmPicker = () => {
                 <option>Radix sort</option>
                 <option>Insertion sort</option>
             </select>
-            <button onClick={sort} className='sort'>sort</button>
         </>
     );
 }
