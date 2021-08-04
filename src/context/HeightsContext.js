@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 
 import RandomValues from '../components/RandomValues';
+import { NumberOfSticks } from '../default/Defaults';
 
 const HeightsContext = React.createContext();
 const HeightsUpdateContext = React.createContext();
@@ -14,7 +15,7 @@ export const useHeightsUpdate = () => {
 }
 
 export const HeightsProvider = ({ children }) => {
-    const [heights, setHeights] = useState(RandomValues(40));
+    const [heights, setHeights] = useState(RandomValues(NumberOfSticks()));
 
     const modifyHeights = (arr) => {
         setHeights(arr);

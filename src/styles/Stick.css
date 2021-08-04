@@ -1,6 +1,8 @@
 .stick {
+    --stick-width: .2vw;
+
     background-color: red;
     display: inline-block;
-    width: 1em;
-    margin: .5em 0 .5em .5em;
+    width: var(--stick-width);
+    margin: .5em 0 .5em var(--stick-width);
 }

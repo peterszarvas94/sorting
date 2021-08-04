@@ -1,6 +1,7 @@
 .visual_parent {
     position: relative;
     height: 21em;
+    margin: 1em 0 0 0;
 }
 
 .visual_child {

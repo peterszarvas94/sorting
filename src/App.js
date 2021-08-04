@@ -1,20 +1,23 @@
 import { HeightsProvider } from './context/HeightsContext';
+import Welcome from './components/Welcome';
 import AlgorithmPicker from './components/AlgorithmPicker';
 import SortButton from './components/SortButton';
-import ResetButton  from './components/ResetButton';
+import RandomizeButton  from './components/RandomizeButton';
 import VisualViewer from './components/VisualViewer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
 
 function App() {
 	return (
 		<>
-			<HeightsProvider>
-				<AlgorithmPicker />
-				<SortButton />
-				<ResetButton />
-				<VisualViewer />
-			</HeightsProvider>			
+				<HeightsProvider>
+					<Welcome />
+					<AlgorithmPicker />
+					<SortButton />
+					<RandomizeButton />
+					<VisualViewer />
+				</HeightsProvider>
 		</>
 	);
 }

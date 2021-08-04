@@ -3,11 +3,10 @@ import React, { useEffect } from 'react';
 import '../styles/Stick.css';
 
 const Stick = (props) => {
-
     useEffect(() => {
         const setHeight = () => {
             const el = document.getElementById(props.id);
-            el.style.height = props.height + 'em';
+            el.style.height = props.height / 10 + 'em';
         }
         setHeight();
     }, [props.id, props.height]);
