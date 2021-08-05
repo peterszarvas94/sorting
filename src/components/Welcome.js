@@ -6,7 +6,7 @@ const Welcome = () => {
     return(
         <>
             <h2>Sorting algorithms</h2>
-            <p>This page is about to show how sorting algorihtms work - for education purposes only.</p>
+            <p>This is a project about visualizing how sorting algorithms work.</p>
             <p className='author'>Szarvas Péter, 2021</p>
         </>
     );
